@@ -1,0 +1,12 @@
+Use this code in views/animals/show.html.erb to allow admin to add new animal resources:
+
+<% if @user.admin == true
+</div>
+    <%= button_to "Create a new animal resource.", create_path, :class => "adminbutton", :method => :get %>
+<div>
+
+<% end %>
+
+**Add the editAnimal_path route:
+
+get 'resources/create', to: 'resources#create', as create_path

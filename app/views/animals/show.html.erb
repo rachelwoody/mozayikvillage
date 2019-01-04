@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @animal.cost %>
+</p>
+
+<p>
+  <strong>Purchased:</strong>
+  <% if @animal.purchased == false %>
+        <td>still needed</td>
+        <% else %>
+        <td>bought</td>
+    <% end %>
+</p>
+
+<p>
+  <strong>Index:</strong>
+  <%= @animal.index %>
+</p>
+
+<%= link_to 'Edit', edit_resource_path(@animal) %> |
+<%= link_to 'Back', resources_path %>

@@ -1,0 +1,25 @@
+// Place all the styles related to the Resources controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.donatebutton {
+  background-color: 6E3693;
+  color: white;
+}
+
+
+.resources_container {
+  width: 100%;
+  background-color: white;
+}
+
+.description {
+  width: 20%;
+}
+
+.icon {
+  color: white;
+  background-color: #f55e55;
+}

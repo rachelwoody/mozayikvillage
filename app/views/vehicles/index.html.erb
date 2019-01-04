@@ -1,0 +1,24 @@
+<link rel='stylesheet' type='stylesheets/resources/css' href='resources.css'/>
+
+<div class= "container"/>
+
+<h1> Vehicles </h1>
+
+<p></br> <% @vehicles.each do |vehicle| %>
+                    <h2>  Vehicle <%=vehicle.index%> </h2>
+                      <%= vehicle.name %></br>
+                      Cost: <%= vehicle.cost %>
+                      Age: <%= vehicle.age %>
+
+                      </br>
+
+
+                      <% if File.exist?("app/assets/images/vehicle/#{vehicle.index}.png") %>
+                      <%= image_tag("vehicle/#{vehicle.index}.png", alt: "vehicle") %>
+                      <% else %>
+                        Image could not load
+                      <% end %>
+
+                    </br>
+
+                      <% end %>

@@ -1,0 +1,5 @@
+<%= form_with local: true, url: '/resources/donate', method: "post" do |form| %>
+ Name of Resource You Want to Donate to <%= form.text_field :name %>
+ Amount of donation <%= form.number_field :amount %>
+  <%= form.submit %>
+ <% end %>

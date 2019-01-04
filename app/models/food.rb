@@ -1,0 +1,2 @@
+class Food < Resource
+end

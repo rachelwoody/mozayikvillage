@@ -1,0 +1,23 @@
+<link rel='stylesheet' type='stylesheets/resources/css' href='resources.css'/>
+
+<div class= "container"/>
+
+<h1> Animals </h1>
+
+<p></br> <% @animals.each do |animal| %>
+
+                      <h2>Animal <%= animal.index%></h2>
+                      Name: <%= animal.name %></br>
+                      Cost: $<%= animal.cost %>
+                      Age: <%= animal.age %>
+                      </br>
+                    </br>
+
+                    <% if File.exist?("app/assets/images/animal/#{animal.index}.png") %>
+                    <%= image_tag("animal/#{animal.index}.png", alt: "animal image") %>
+                    <% else %>
+                      Image could not load
+                    <% end %>
+
+
+<%end%>

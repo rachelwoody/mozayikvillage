@@ -1,0 +1,8 @@
+Add this code when donate path is in place:
+
+<% if @user.admin == true
+</div>
+<%= button_to "Donate!", donate_path(vehicle), :class => "donatebutton", :method => :patch %>
+<div>
+
+<% end %>

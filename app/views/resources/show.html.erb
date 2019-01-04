@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<p>
+  <strong>Cost:</strong>
+  <%= @resource.cost %>
+</p>
+
+<p>
+  <strong>Purchased:</strong>
+  <% if @resource.purchased == false %>
+        <td>still needed</td>
+        <% else %>
+        <td>bought</td>
+    <% end %>
+</p>
+
+<p>
+  <strong>Index:</strong>
+  <%= @resource.index %>
+</p>
+
+<%= link_to 'Edit', edit_resource_path(@resource) %> |
+<%= link_to 'Back', resources_path %>

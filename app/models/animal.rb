@@ -1,0 +1,2 @@
+class Animal < Resource
+end

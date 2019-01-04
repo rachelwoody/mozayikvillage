@@ -1,0 +1,25 @@
+.resourcebuttonscontainer {
+  background-color: white;
+}
+
+.resourcebutton {
+float: left;
+display: inline-block;
+margin: 20px auto;
+padding: 20px;
+
+
+}
+
+.container {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  }
+
+.header {
+  height: 10%;
+  background-color:
+  color: 6E3693;
+
+}
